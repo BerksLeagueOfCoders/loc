@@ -7,5 +7,3 @@ $(NPM_OUT_FILES): $(NPM_IN_FILES)
 
 subsystem:
 	$(MAKE) -C loc\css
-	npm --prefix ./functions run lint
-	npm --prefix ./functions run build
