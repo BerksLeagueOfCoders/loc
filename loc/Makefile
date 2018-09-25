@@ -12,7 +12,7 @@ php_src_files = $$(patsubst %.tml,%.php,$(tml_src_files))
 all: $(css_files) $(html_files) $(deps)
 
 %.html: %.php
-	php $<> $@
+	php -c php.ini $<> $@
 
 %.php: %.tml
 	
