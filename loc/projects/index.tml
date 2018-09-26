@@ -10,12 +10,12 @@
 	<?PHP include "header.ihtml"?>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
+      <br /><br />
       <h1 class="header center black-text">Projects</h1>
       <div class="row center">
         <h5 class="header col s12 light">Here are our current projects</h5>
       </div>
-      <br><br>
+      <br /><br />
 
     </div>
   </div>
@@ -23,7 +23,7 @@
   <div class="col s12 m7">
       <div class="card horizontal">
         <div class="card-image">
-          <img src="images/resourceproject.jpg">
+          <img src="/images/resourceproject.jpg" />
           <span class="card-title">Resource Development</span>
         </div>
         <div class="card-stacked">
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="card-image">
-              <img src="images/games.jpg">
+              <img src="/images/games.jpg" />
               <span class="card-title">Game Development</span>
             </div>
         </div>
@@ -59,7 +59,7 @@
       <div class="col s12 m7">
           <div class="card horizontal">
             <div class="card-image">
-              <img src="images/web.jpg">
+              <img src="/images/web.jpg" />
               <span class="card-title">Web Development</span>
             </div>
             <div class="card-stacked">
@@ -75,24 +75,7 @@
           </div>
         </div>
 
-  <footer class="page-footer black">
-      <div class="container">
-        <div class="row">
-          <div class="col 13 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="white-text" href="default.html">Contact us</a></li>
-              <li><a class="white-text" href="www.npole.org">Daniel's personal site</a></li>
-            </ul>
-          </div>
-          <div class="col 13 s12">
-              <h5 class="white-text">About Us</h5>
-              <p class="white-text">We are a group of computer programming enthusiasts, who work on projects together, and develop our skills.</p>
-            </div>
-        </div>
-      </div>
-    </footer>
-
+<?PHP include "footer.ihtml"?>
 <!--    <div class="footer-copyright">
       <div class="container">
       Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>

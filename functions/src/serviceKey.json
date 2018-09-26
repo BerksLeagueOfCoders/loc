@@ -1,9 +1,4 @@
-import * as functions from 'firebase-functions';
-
-const admin = require("firebase-admin");
-const app=admin.initializeApp();
-
-const serviceAccount={
+{
   "type": "service_account",
   "project_id": "league-of-coders-e5791",
   "private_key_id": "a7b6a6f4ac0e6cf88068b2b4bd46267b3959ee26",
@@ -15,53 +10,3 @@ const serviceAccount={
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xuvos%40league-of-coders-e5791.iam.gserviceaccount.com"
 }
-
-/*
-const app=admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://league-of-coders-e5791.firebaseio.com'
-});
-*/
-const db = admin.firestore(app);
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-// export const helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
-
-function getDocument(database : any , collectionName: String, docName: String) : any{
-  // [START get_document]
-  const ret = database.collection(collectionName).doc(docName);
-  return ret.get().then(doc => {
-        if (!doc.exists) {
-          console.log('No such document!');
-        } else {
-
-		  return doc.data();
-        }
-      })
-      .catch(err => {
-        console.log('Error getting document', err);
-      });
-  // [END get_document]
-
-}
-
-
-exports.bigben = functions.https.onRequest((req, res) => {
-    
-
-	getDocument(db, "projects", "ROOT").then(x => {
-		res.status(200).send(`<!doctype html>
-		<head>
-		  <title>Time</title>
-		</head>
-		<body>      
-			${x.test}
-		</body>
-	  </html>`);
-
-	});
-});
-//# sourceMappingURL=index.js.map

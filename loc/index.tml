@@ -1,63 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>League of Coders</title>
+	<head>
+		<title>League of Coders</title>
+		<?PHP include "head.ihtml" ?></head>
+	<body>
+		<?PHP include "header.ihtml"?>
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br /><br />
+				<h1 class="header center blue-text">League of Coders</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">Penn State Berks official coding club</h5>
+				</div>
+				<br /><br />
+			</div>
+		</div>
 
-  <!-- CSS  -->
-<?PHP include "head.ihtml" ?></head>
-<body>
- <?PHP include "header.ihtml"?>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br /><br />
-      <h1 class="header center blue-text">League of Coders</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Penn State Berks official coding club</h5>
-      </div>
-      <br /><br />
-    </div>
-  </div>
+		<div class="parallax-container">
+			<div class="parallax"><img src="/images/home.jpg" /></div>
+		</div>
 
-  <div class="parallax-container">
-      <div class="parallax"><img src="images/home.jpg"></div>
-    </div>
+		<div class="container">
+			<br /><br />
+			<div class="row center">
+				<h5>Want to get more information?</h5>
+				<a class="waves-effect waves-light btn-large blue" href="join.html">Join email list</a>
+			</div>
+			<br /><br />
+		</div>
 
-  <div class="container">
-      <br /><br />
-      <div class="row center">
-          <h5>Want to get more information?</h5>
-          <a class="waves-effect waves-light btn-large blue" href="join.html">Join email list</a>
-      </div>
-      <br /><br />
-    </div>
-
-  <footer class="page-footer black">
-    <div class="container">
-      <div class="row">
-        <div class="col 13 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="white-text" href="default.html">Contact us</a></li>
-            <li><a class="white-text" href="www.npole.org">Daniel's personal site</a></li>
-          </ul>
-        </div>
-        <div class="col 13 s12">
-            <h5 class="white-text">About Us</h5>
-            <p class="white-text">We are a group of computer programming enthusiasts, who work on projects together, and develop our skills.</p>
-          </div>
-      </div>
-    </div>
-  </footer>
-<!--    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    -->
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+		<?PHP include "footer.ihtml"?>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+	</body>
 </html>
