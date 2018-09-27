@@ -1,0 +1,37 @@
+[debug] [2018-09-27T00:06:01.104Z] ----------------------------------------------------------------------
+[debug] [2018-09-27T00:06:01.107Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\josep\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-09-27T00:06:01.107Z] CLI Version:   4.2.1
+[debug] [2018-09-27T00:06:01.107Z] Platform:      win32
+[debug] [2018-09-27T00:06:01.107Z] Node Version:  v8.12.0
+[debug] [2018-09-27T00:06:01.108Z] Time:          Wed Sep 26 2018 20:06:01 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-09-27T00:06:01.108Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-27T00:06:01.181Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-27T00:06:01.182Z] > authorizing via signed-in user
+[debug] [2018-09-27T00:06:01.185Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-27T00:06:01.185Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-27T00:06:01.524Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-27T00:06:01.544Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/league-of-coders-e5791  
+ 
+[debug] [2018-09-27T00:06:02.231Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-27T00:06:02.232Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/league-of-coders-e5791  
+ 
+[debug] [2018-09-27T00:06:02.714Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\Data\HTML\loc'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-09-27T00:06:29.433Z] Fetching environment
+[debug] [2018-09-27T00:06:29.464Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/255580937277:getServerAppConfig  
+ 
+[debug] [2018-09-27T00:06:29.464Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/255580937277/clients/_:getWebAppConfig  
+ 
+[debug] [2018-09-27T00:06:29.816Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-27T00:06:29.817Z] Starting @google-cloud/functions-emulator
+[debug] [2018-09-27T00:06:30.134Z] <<< HTTP RESPONSE 200
+[info] i  hosting[league-of-coders-e5791]: Serving hosting files from: loc
+[info] +  hosting[league-of-coders-e5791]: Local server: http://localhost:5000
+[debug] [2018-09-27T00:06:41.065Z] Parsing function triggers
+[info] +  functions: test: http://localhost:5001/league-of-coders-e5791/us-central1/test
+[info] +  functions: bigben: http://localhost:5001/league-of-coders-e5791/us-central1/bigben

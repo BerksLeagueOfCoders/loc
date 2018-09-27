@@ -1,82 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 
-  <title>League of Coders</title>
+		<title>League of Coders</title>
+		<script src="/js/projects.js"></script>
+		<?PHP include "head.ihtml" ?>
+	</head>
+	<body>
+		<?PHP include "header.ihtml"?>
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br /><br />
+				<h1 class="header center black-text">Projects</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">Here are our current projects</h5>
+				</div>
+				<br /><br />
 
-  <?PHP include "head.ihtml" ?>
-</head>
-<body>
-	<?PHP include "header.ihtml"?>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br /><br />
-      <h1 class="header center black-text">Projects</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Here are our current projects</h5>
-      </div>
-      <br /><br />
+			</div>
+		</div>
+		<template id="PROJECT_TEMPLATE">
+			<div class="project-card">
+					<div class="card-image">
+						<img src="/images/" />
+						<span class="card-title"></span>
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p></p>
+						</div>
+						<div class="card-action">	
+							<a href="/projects/">Project Page</a>
+						</div>
+					</div>
+			</div>
+		</template>
+		<div id="CONTENT_HERE"></div>
 
-    </div>
-  </div>
-
-  <div class="col s12 m7">
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="/images/resourceproject.jpg" />
-          <span class="card-title">Resource Development</span>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-                  <p>Our first project will be resource development. We need to make a file server, and access to git.</p>
-          </div>
-          <div class="card-action">
-            <a href="resource.html">Project Page</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m7">
-        <div class="card horizontal">
-          <div class="card-stacked">
-            <div class="card-content">
-                    <p>A project for people who want to work on developing a game. Would be good if you have experience map making,
-                      or experience in c++ or similar languages.
-                    </p>
-            </div>
-            <div class="card-action">
-              <a href="game.html">Project Page</a>
-            </div>
-          </div>
-          <div class="card-image">
-              <img src="/images/games.jpg" />
-              <span class="card-title">Game Development</span>
-            </div>
-        </div>
-      </div>
-
-      <div class="col s12 m7">
-          <div class="card horizontal">
-            <div class="card-image">
-              <img src="/images/web.jpg" />
-              <span class="card-title">Web Development</span>
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                      <p>In this project we will be working on the club website. If you're good at HTML, CSS, JavaScript, ect, or want
-                        to get better with these languages, this is a good project for you.
-                      </p>
-              </div>
-              <div class="card-action">
-                <a href="web.html">Project Page</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-<?PHP include "footer.ihtml"?>
-<!--    <div class="footer-copyright">
+		<?PHP include "footer.ihtml"?>
+		<!--    <div class="footer-copyright">
       <div class="container">
       Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
@@ -84,10 +46,6 @@
   </footer>
 -->
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
-  </body>
+	</body>
 </html>

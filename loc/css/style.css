@@ -27,3 +27,48 @@ footer {
     @media only screen and (min-width: 993px) {
       footer > div {
         width: 70%; } }
+
+.project-card {
+  pverflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 5px;
+  display: flex;
+  width: 100%; }
+  .project-card:nth-of-type(2n) {
+    flex-direction: row-reverse; }
+  .project-card > div {
+    position: relative;
+    width: 50%; }
+    .project-card > div img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block; }
+    .project-card > div span {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      padding: 24px;
+      font-size: 24px; }
+  .project-card > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+    .project-card > :nth-child(2) > :nth-child(1) {
+      padding: 24px;
+      flex-grow: 1; }
+    .project-card > :nth-child(2) > :nth-child(2) {
+      background-color: inherit;
+      border-top: 1px solid rgba(160, 160, 160, 0.2);
+      position: relative;
+      padding: 16px 24px; }
+      .project-card > :nth-child(2) > :nth-child(2) a {
+        color: #ffab40;
+        margin-right: 24px;
+        -webkit-transition: color .3s ease;
+        transition: color .3s ease;
+        text-transform: uppercase; }
+        .project-card > :nth-child(2) > :nth-child(2) a:hover {
+          color: #ffd8a6; }
