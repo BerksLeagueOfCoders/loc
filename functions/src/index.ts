@@ -44,7 +44,7 @@ exports.bigben = functions.https.onRequest((req, res) => {
 });
 });
 
-exports.test = functions.https.onRequest((request, response) => {
+exports.projectsGET = functions.https.onRequest((request, response) => {
    cors(request, response, () => {
       getDocument(db, "projects", "ROOT").then(x => {
        
