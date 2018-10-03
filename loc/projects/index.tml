@@ -21,15 +21,16 @@
 		</div>
 		<template id="PROJECT_TEMPLATE">
 			<div class="project-card">
-					<div class="card-image">
+					<div>
 						<img src="/images/" />
-						<span class="card-title"></span>
+						
+						<span></span>
 					</div>
-					<div class="card-stacked">
-						<div class="card-content">
+					<div>
+						<div>
 							<p></p>
 						</div>
-						<div class="card-action">	
+						<div>	
 							<a href="/projects/">Project Page</a>
 						</div>
 					</div>

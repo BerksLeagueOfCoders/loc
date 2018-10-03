@@ -1,18 +1,18 @@
 <header>
 	<nav class="black" role="navigation">
-		<div class="nav-wrapper container">
-			<a id="logo-container" href="/" class="brand-logo">League of Coders</a>
-			<ul class="right hide-on-med-and-down">
-				<li>
+		<div class="nav-wrapper container extenderator">
+			<a id="logo-container" href="/" class="mainLogo">League of Coders</a>
+			<div class="dropdown">
+				<div>
 					<a href="/">Home</a>
-				</li>
-				<li>
+				</div>	
+				<div>
 					<a href="/projects">Projects</a>
-				</li>
-				<li>
+				</div>
+				<div>
 					<a href="/announcements.html">Announcements</a>
-				</li>
-			</ul>
+				</div>
+			</div>
 
 			<!--      <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar</a></li>
