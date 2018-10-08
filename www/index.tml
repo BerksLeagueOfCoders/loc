@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>League of Coders</title>
+		<?PHP include "head.ihtml" ?></head>
+	<body>
+		<?PHP include "header.ihtml"?>
+		
+	
+			<div class="section no-pad-bot" id="index-banner">
+				<div class="container">
+					<br /><br />
+					<h1 class="header center blue-text">League of Coders</h1>
+					<div class="row center">
+						<h5 class="header col s12 light">Penn State Berks official coding club</h5>
+						<h5 class="header col s12 light">Discord: <a href="https://discord.gg/UCyAec2">https://discord.gg/UCyAec2</a></h5>
+					</div>
+					<br /><br />
+				</div>
+			</div>
+
+			
+			
+			<div style="height: 500px; width: 100%; background-attachment: fixed; background-image: url('/images/home.jpg');"></div>
+			<div class="container">
+				<br /><br />
+				<div class="row center">
+					<h5>Want to get more information?</h5>
+					<a class="waves-effect waves-light btn-large blue" href="join.html">Join email list</a>
+				</div>
+				<br /><br />
+			</div>
+	
+		<?PHP include "footer.ihtml"?>
+
+	</body>
+</html>
