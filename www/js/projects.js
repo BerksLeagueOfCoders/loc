@@ -1,4 +1,5 @@
 "use strict";
+
 window.addEventListener('load', function() {
 
 	var xhttp = new XMLHttpRequest(); 

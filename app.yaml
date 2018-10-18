@@ -14,5 +14,7 @@
 # [START gae_quickstart_yaml]
 runtime: nodejs8
 
+# used by gloud tools
+service: default
     
 # [END gae_quickstart_yaml]
